@@ -1,0 +1,53 @@
+name: Provisioning Lambda
+
+on: 
+  push:
+    branches: [main]
+      
+
+jobs:
+  plan:
+    permissions:
+      id-token: write
+      contents: read
+      
+    name: terraform plan lambda
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.PRD_AWS_ROLE_TO_ASSUME }}
+          role-session-name: githubaction
+          aws-region: ${{ secrets.PRD_AWS_DEFAULT_REGION }}
+            
+      - name: Plan Lambda
+        run: |
+          terraform init
+          terraform plan
+#---
+  apply:
+      permissions:
+        id-token: write
+        contents: read
+        
+      name: terraform apply lambda
+      runs-on: ubuntu-latest
+      needs: plan
+
+      steps:
+        - name: Check out code
+          uses: actions/checkout@v4
+        - name: Configure AWS credentials
+          uses: aws-actions/configure-aws-credentials@v4
+          with:
+            role-to-assume: ${{ secrets.PRD_AWS_ROLE_TO_ASSUME }}
+            role-session-name: githubaction
+            aws-region: ${{ secrets.PRD_AWS_DEFAULT_REGION }}
+            
+        - name: Apply Lambda
+          run: |
+            terraform init
+            terraform apply --auto-approve
