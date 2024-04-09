@@ -8,7 +8,8 @@ def lambda_handler(event, context):
                 'dengue',
                 'ferring',
                 'moderna',
-                'mps'
+                'mps',
+                'wama',
             ]
     
     # Dicionário com as regras de redirecionamento
