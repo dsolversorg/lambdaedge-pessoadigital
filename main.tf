@@ -3,5 +3,5 @@ module "lambda_edge" {
   name   = "lambda-edge-pessoadigital"
   bucket = "sites.pessoadigital.digitalsolvers.com"
   domain = "*.digitalsolvers.com"
-  aliases = ["pessoa.digital.digitalsolvers.com"]
+  aliases = ["pessoadigital.digitalsolvers.com"]
 }
