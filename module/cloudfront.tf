@@ -25,7 +25,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   default_cache_behavior {
     cache_policy_id  = "4135ea2d-6df8-44a3-9df3-4b5a84be39ad"
     allowed_methods  = var.allowed_methods
-    #cached_methods   = ["GET", "HEAD"]
+    cached_methods   = ["GET", "HEAD"]
     target_origin_id = data.aws_s3_bucket.bucket.id
 
     #forwarded_values {
