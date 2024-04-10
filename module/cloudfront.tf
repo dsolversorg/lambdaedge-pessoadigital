@@ -51,12 +51,12 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     max_ttl                = 86400
   }
 
-  restrictions {
-    geo_restriction {
-      restriction_type = "none"
-      locations = []
-    }
-  }
+  #restrictions {
+  #  geo_restriction {
+  #    restriction_type = "none"
+  #    locations = []
+  # }
+  #}
 
   tags = {
     Environment = "production"
