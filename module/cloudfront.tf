@@ -32,10 +32,10 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     #  query_string = false
     #
     #  cookies {
-    #    forward = "none"
+    #     forward = "none"
     # }
 
-    }
+    #}
 
     lambda_function_association {
       event_type   = "viewer-request"
@@ -51,12 +51,12 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     max_ttl                = 86400
   }
 
-  #restrictions {
-  #  geo_restriction {
-  #    restriction_type = "none"
-  #    locations = []
-  # }
-  #}
+    restrictions {
+    geo_restriction {
+      restriction_type = "none"
+      locations = []
+   }
+  }
 
   tags = {
     Environment = "production"
