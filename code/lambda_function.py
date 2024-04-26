@@ -11,7 +11,7 @@ def lambda_handler(event, context):
                 'mps',
                 'wama',
                 'mrna',
-                'metadoctors'
+                'metadoctors',
                 'mps-eng'
             ]
     
