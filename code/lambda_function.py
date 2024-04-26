@@ -12,6 +12,7 @@ def lambda_handler(event, context):
                 'wama',
                 'mrna',
                 'metadoctors'
+                'mps-eng'
             ]
     
     # Dicionário com as regras de redirecionamento
