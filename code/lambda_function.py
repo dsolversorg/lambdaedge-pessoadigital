@@ -12,7 +12,6 @@ def lambda_handler(event, context):
                 'metadoctors',
                 'mps-eng',
                 'hempsmeds',
-                'crwcbd',
                 'metadoctors-dev',
                 'takeda',
             ]
