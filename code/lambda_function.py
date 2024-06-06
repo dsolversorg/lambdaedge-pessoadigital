@@ -8,7 +8,6 @@ def lambda_handler(event, context):
                 'dengue',
                 'ferring',
                 'mps',
-                'wama',
                 'mrna',
                 'metadoctors',
                 'mps-eng',
