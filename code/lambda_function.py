@@ -14,6 +14,8 @@ def lambda_handler(event, context):
                 'hempsmeds',
                 'metadoctors-dev',
                 'takeda',
+                'novonordisk',
+                'cslvifor',
             ]
     
     # Dicionário com as regras de redirecionamento
