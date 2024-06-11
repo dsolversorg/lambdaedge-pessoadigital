@@ -51,3 +51,5 @@ def lambda_handler(event, context):
 
     # Se não for um dos URIs de redirecionamento, retorna o request original
     return request
+
+
