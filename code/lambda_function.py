@@ -17,6 +17,7 @@ def lambda_handler(event, context):
                 'novonordisk',
                 'cslvifor',
                 'padcev',
+        
             ]
     
     # Dicionário com as regras de redirecionamento
