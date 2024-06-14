@@ -18,6 +18,7 @@ def lambda_handler(event, context):
                 'cslvifor',
                 'padcev',
                 'azjuridico',
+                'takeda-copilot',
             ]
     
     # Dicionário com as regras de redirecionamento
