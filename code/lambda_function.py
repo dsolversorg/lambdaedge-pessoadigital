@@ -20,6 +20,7 @@ def lambda_handler(event, context):
                 'azjuridico',
                 'takeda-copilot',
                 'amiloidose',
+                'estetica'
             ]
     
     # Dicionário com as regras de redirecionamento
