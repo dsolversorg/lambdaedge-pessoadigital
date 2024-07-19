@@ -23,7 +23,8 @@ def lambda_handler(event, context):
                 'cancer',
                 'obesidade',
                 'diabetes',
-                'compliance'
+                'compliance',
+        
             ]
     
     # Dicionário com as regras de redirecionamento
