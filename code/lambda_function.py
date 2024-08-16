@@ -25,6 +25,7 @@ def lambda_handler(event, context):
                 'diabetes',
                 'compliance',
                 'antiTabagismo',
+                'ansiedade',
             ]
     
     # Dicionário com as regras de redirecionamento
