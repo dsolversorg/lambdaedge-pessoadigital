@@ -27,7 +27,7 @@ def lambda_handler(event, context):
                 'antiTabagismo',
                 'ansiedade',
                 'ansiedade2',
-                'ansiedade-copilot',
+                'cristalia-copilot',
             ]
     
     # Dicionário com as regras de redirecionamento
