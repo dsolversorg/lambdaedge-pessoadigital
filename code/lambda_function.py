@@ -28,6 +28,7 @@ def lambda_handler(event, context):
                 'ansiedade',
                 'cristalia',
                 'cristalia-copilot',
+                'jbss',
             ]
     
     # Dicionário com as regras de redirecionamento
