@@ -27,7 +27,7 @@ def lambda_handler(event, context):
                 'antiTabagismo',
                 'ansiedade',
                 'cristalia',
-                'cristalia-copilot',
+                'ansiedade-copilot',
                 'jbss',
             ]
     
