@@ -31,6 +31,7 @@ def lambda_handler(event, context):
                 'jbss',
                 'trainia-copilot-medicina',
                 'ovario-dev',
+                'colgate',
         
             ]
     
