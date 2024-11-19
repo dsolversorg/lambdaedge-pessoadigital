@@ -32,7 +32,7 @@ def lambda_handler(event, context):
                 'trainia-copilot-medicina',
                 'ovario-dev',
                 'colgate',
-        
+                'moderna',
             ]
     
     # Dicionário com as regras de redirecionamento
