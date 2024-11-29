@@ -33,6 +33,7 @@ def lambda_handler(event, context):
                 'ovario-dev',
                 'colgate',
                 'moderna',
+                'ferro',
             ]
     
     # Dicionário com as regras de redirecionamento
