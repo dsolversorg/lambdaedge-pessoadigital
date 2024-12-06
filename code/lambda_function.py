@@ -34,7 +34,6 @@ def lambda_handler(event, context):
                 'colgate',
                 'moderna',
                 'ferro',
-                'ace',
             ]
     
     # Dicionário com as regras de redirecionamento
