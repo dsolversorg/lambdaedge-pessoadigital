@@ -34,6 +34,7 @@ def lambda_handler(event, context):
                 'colgate',
                 'moderna',
                 'ferro',
+                'teams-appmsteamsvoice',
             ]
     
     # Dicionário com as regras de redirecionamento
