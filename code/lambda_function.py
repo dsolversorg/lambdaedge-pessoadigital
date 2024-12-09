@@ -35,6 +35,7 @@ def lambda_handler(event, context):
                 'moderna',
                 'ferro',
                 'teams-appmsteamsvoice',
+                'NMOSD',
             ]
     
     # Dicionário com as regras de redirecionamento
