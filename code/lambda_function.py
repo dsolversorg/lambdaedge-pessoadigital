@@ -36,6 +36,7 @@ def lambda_handler(event, context):
                 'ferro',
                 'teams-appmsteamsvoice',
                 'NMOSD',
+                'ace'
                 'MG',
             ]
     
