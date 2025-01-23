@@ -39,6 +39,7 @@ def lambda_handler(event, context):
                 'ace'
                 'MG',
                 'awstexai',
+        
             ]
     
     # Dicionário com as regras de redirecionamento
